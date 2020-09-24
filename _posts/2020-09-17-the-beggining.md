@@ -1,0 +1,31 @@
+---
+title: "The Beggining"
+catagories:
+    - Experience
+    - Web Development
+tags:
+    - nodejs
+    - expressjs
+    - mongodb
+---
+I decided to work on the Backend Part of the website (I suck at Design). I was clueless about Website Development, the only "Website" I had played with were one page html and css websites....  
+
+So I started with learning Nodejs and ExpressJs, Tutorials, Documentation, I read a lot and thankfully my teammate who was working with me knew the basics of Expressjs already. So we quickly split up the backend into controllers, routes and models, a standard split.
+
+Now, for those who don't know - Controllers include the functions that are run, Routes are the Path through which these functions are accessed from when requests come in and models are the database models we define.  
+Yeah, even though Mongodb is a schemaless DB, we use Schemas using Mongoose for easier Data Manipulation. Makes me question the choice of using Mongodb.
+
+Anyways, I started Working on the Events Page requests, CRUD stuff (Create, Read, Update, Delete). 
+
+![mongo](/assets/images/mongodb - white.png)
+
+Being new to Mongodb and Databases in general I had some pretty serious misconceptions about finding data in a Collection (A group of documents). I used to think that for searching for an item in the database, the query searches through all the documents of a Database, But Mongodb has this nice thing called [Indexes](https://docs.mongodb.com/manual/indexes/) which is a seperate data structure and contains specific fields, Mongodb Indexes on '_id' field by default and you can [add more fields](https://docs.mongodb.com/manual/core/index-single/) if you want. This allows one to do CRUD operations quickly.  
+Do keep in mind though that creating too many Indexes is also a bad Idea, each document has a field in each Index, so for large collections a lot of excess space would be required for the Indexes.
+
+You can optimize Mongodb queries further by checking out the query Plans of the queries you're planning to execute. Do this using the [.explain()](https://docs.mongodb.com/manual/reference/method/cursor.explain/#cursor.explain) method in the Mongodb shell. 
+The queryPlanner mode will tell you if it is using IXSCAN (Index Scan), COLLSCAN (Collection Scan) etc.  
+Running this function in executionStats mode allows you to find out the number of documents scanned and compare performance.  
+Read More about the query plan [here](https://docs.mongodb.com/manual/tutorial/analyze-query-plan/)
+
+
+Up Ahead : [Setting Up Notifications]({% post_url 2020-09-19-notification %})
