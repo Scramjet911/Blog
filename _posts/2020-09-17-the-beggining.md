@@ -1,6 +1,6 @@
 ---
 title: "The Beggining"
-catagories:
+categories:
     - Experience
     - Web Development
 tags:
@@ -28,4 +28,4 @@ Running this function in executionStats mode allows you to find out the number o
 Read More about the query plan [here](https://docs.mongodb.com/manual/tutorial/analyze-query-plan/)
 
 
-Up Ahead : [Setting Up Notifications]({% post_url 2020-09-19-notification %})
+Up Ahead : [Setting Up Notifications]({% post_url 2020-09-18-notification %})
