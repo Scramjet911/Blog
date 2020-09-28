@@ -1,6 +1,6 @@
 ---
 title: "Setting Up Notifications"
-catagories:
+categories:
     - Experience
     - Web Development
 tags:
@@ -8,9 +8,10 @@ tags:
     - expressjs
     - mongodb
     - agenda
+sidebar:
+    nav : web_dev
 ---
-<!-- > Only one thing is impossible for God: To find any sense in any copyright law on the planet.  
-<cite><a href="http://www.brainyquote.com/quotes/quotes/m/marktwain163473.html">Mark Twain</a></cite> -->
+
 ![Notif meme](/assets/images/gettingnot.png)
 
 So, after the Events Controller was done I started working on the notifications system on the backend.  
