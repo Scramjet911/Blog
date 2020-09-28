@@ -7,3 +7,16 @@ main:
     url: /tags/
   - title: "About"
     url: /about/
+
+web_dev:
+  - title: "Just an Intro"
+    url: /experience/web development/progenitor/
+  - title: "The Beggining"
+    url: /experience/web development/the-beggining/
+  - title: "Setting Up Notifications"
+    url: /experience/web development/notification/
+  - title: "Why Do We Chat?"
+    url: /experience/web development/chat/
+  - title: "Kids, Don't Skip Tests"
+    url: /experience/web development/testing/
+  

@@ -7,9 +7,11 @@ tags:
     - websites
 # layout: splash
 header : 
-    overlay_image : /assets/images/basic_header - Copy.jpg
+    overlay_image : /assets/images/basic_header.jpg
     overlay_filter : 0.2
 excerpt : Experience is the name everyone gives to their mistakes.  <cite>Oscar Wilde</cite>
+sidebar:
+    nav : web_dev
 ---
 
 <strong>It all began with winning a coding competition.</strong> You see, I love solving problems, so naturally I took a liking to competitive coding. 
