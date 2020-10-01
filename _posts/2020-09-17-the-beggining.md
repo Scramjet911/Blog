@@ -10,7 +10,9 @@ tags:
 sidebar:
     nav : web_dev
 ---
-I decided to work on the Backend Part of the website (I suck at Design). I was clueless about Website Development, the only "Website" I had played with were one page html and css websites....  
+Website Developement was a new world for me, the only "Websites" I had developed one page html and css websites. So, I knew the basics but I had no Idea how to start. It was decided that I would work on the Backend part of the website (Partially due to my bad design sense &#128517;)
+
+![Backend Meme](/assets/images/backend.png)
 
 So I started with learning Nodejs and ExpressJs, Tutorials, Documentation, I read a lot and thankfully my teammate who was working with me knew the basics of Expressjs already. So we quickly split up the backend into controllers, routes and models, a standard split.
 

@@ -27,4 +27,4 @@ So started My Grand Journey through the world of Website Development.
 
 [Github Repo of Website](https://github.com/Scramjet911/Codestats)
 
-Up Next : [The Beggining]({% post_url 2020-09-17-the-beggining %})
+Up Next : [The Beggining](/experience/web development/the-beggining/)
