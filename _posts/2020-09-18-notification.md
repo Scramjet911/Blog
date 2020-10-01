@@ -12,7 +12,7 @@ sidebar:
     nav : web_dev
 ---
 
-![Notif meme](/assets/images/gettingnot.png)
+![Notif meme](../assets/images/gettingnot.png)
 
 So, after the Events Controller was done I started working on the notifications system on the backend.  
 Registered Users who save events on the website have an option to add notifications/reminders for the Events, so we need a system on the backend which checks the pending notifications and sends notifications to the users.  
