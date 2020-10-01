@@ -12,7 +12,7 @@ sidebar:
 ---
 Website Developement was a new world for me, the only "Websites" I had developed one page html and css websites. So, I knew the basics but I had no Idea how to start. It was decided that I would work on the Backend part of the website (Partially due to my bad design sense &#128517;)
 
-![Backend Meme]({ site.baseurl }/assets/images/backend.png)
+![Backend Meme]({{ site.baseurl }}/assets/images/backend.png)
 
 So I started with learning Nodejs and ExpressJs, Tutorials, Documentation, I read a lot and thankfully my teammate who was working with me knew the basics of Expressjs already. So we quickly split up the backend into controllers, routes and models, a standard split.
 
@@ -34,4 +34,4 @@ Running this function in executionStats mode allows you to find out the number o
 Read More about the query plan [here](https://docs.mongodb.com/manual/tutorial/analyze-query-plan/)
 
 
-Up Ahead : [Setting Up Notifications]({% post_url 2020-09-18-notification %})
+Up Ahead : [Setting Up Notifications]({{ site.baseurl }}{% post_url 2020-09-18-notification %})
