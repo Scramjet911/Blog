@@ -27,4 +27,6 @@ So started My Grand Journey through the world of Website Development.
 
 [Github Repo of Website](https://github.com/Scramjet911/Codestats)
 
-Up Next : [The Beggining](/experience/web development/the-beggining/)
+<img src="{{ site.baseurl }}/assets/images/blog_meme.jpg" width=500>
+
+Up Next : [The Beggining]({{ site.baseurl }}{% post_url 2020-09-17-the-beggining %})
