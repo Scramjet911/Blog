@@ -35,7 +35,7 @@ Since this was also around the time of GSOC, I thought I could also try for that
 
 Anyways I tried implementing the bicubic sampler. In the first iteration, it had a weird issue where there were artefacts in the scaled image, it looked like there was an overflow in some calculation. 
 
-![Original Image](/assets/images/toy_car.png)  
+![Original Image]({{ site.baseurl }}/assets/images/toy_car.png)  
 Original Image  
 <img src="{{ site.baseurl }}/assets/images/toy_car_scaled.png" width=600>  
 Scaled Image  
