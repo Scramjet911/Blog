@@ -30,10 +30,11 @@ permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
 include:
   - _pages
 
+url: https://scramjet911.github.io/
+baseurl: /Blog
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -57,7 +58,7 @@ plugins:
 
 author:
   name   : "Scramjet"
-  avatar : "/assets/images/IceBear.jpg"
+  avatar : "/assets/images/ice_bear.jpg"
   bio    : "A Guy who codes for fun.."
   links:
     - label: "Website"
