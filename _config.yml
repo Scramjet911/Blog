@@ -58,7 +58,7 @@ plugins:
 
 author:
   name   : "Scramjet"
-  avatar : "/assets/images/IceBear.jpg"
+  avatar : "/assets/images/ice_bear.jpg"
   bio    : "A Guy who codes for fun.."
   links:
     - label: "Website"

@@ -5,7 +5,6 @@ categories:
     - Web Development
 tags:
     - websites
-# layout: splash
 header : 
     overlay_image : /assets/images/basic_header.jpg
     overlay_filter : 0.2
