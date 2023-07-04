@@ -21,7 +21,11 @@ Yeah, even though Mongodb is a schemaless DB, we use Schemas using Mongoose for 
 
 Anyways, I started Working on the Events Page requests, CRUD stuff (Create, Read, Update, Delete). 
 
+<<<<<<< Updated upstream
 ![mongo]({{ site.baseurl }}/assets/images/mongodb - white.png)
+=======
+![mongo]({{ site.baseurl }}/assets/images/mongodb.png)
+>>>>>>> Stashed changes
 
 Being new to Mongodb and Databases in general I had some pretty serious misconceptions about finding data in a Collection (A group of documents). I used to think that for searching for an item in the database, the query searches through all the documents of a Database, But Mongodb has this nice thing called [Indexes](https://docs.mongodb.com/manual/indexes/) which is a seperate data structure and contains specific fields, Mongodb Indexes on '_id' field by default and you can [add more fields](https://docs.mongodb.com/manual/core/index-single/) if you want. This allows one to do CRUD operations quickly.  
 Do keep in mind though that creating too many Indexes is also a bad Idea, each document has a field in each Index, so for large collections a lot of excess space would be required for the Indexes.
