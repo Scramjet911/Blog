@@ -3,7 +3,8 @@ title: "The hackathon coding bonanza"
 categories: 
     - AI/ML
 tags: 
-    - AI
+    - sentiment analysis
+    - abuse analysis
     - hugging face
     - python
 header: 
@@ -28,8 +29,9 @@ We finally decided on making a review management system, (think of Disqus but fo
 </p>
 <p style="font-size: medium;">The actual backend 😜</p>
 
+I took up this task. My aim was to make a single endpoint with input as a list of strings and the output being the sentiment analysis (Good/Bad score) and offensive segments score of the input strings.
 #### Environment Setup
-Before starting with the model selection, inference setup etc, we need to setup the docker environment. For that I made a docker compose container, since using it is easier than remembering the docker commands to run and build....
+Before starting with the model selection, inference setup etc, we need to setup the docker environment. For that I made a docker compose container, since using it is easier than remembering the docker commands to run and build. The docker compose is a simple setup since we have a single service -
 <p style="font-size: medium; margin-bottom:4px; color: wheat;">docker-compose.yml</p>
 ```yml
 version: "3.3"
@@ -38,6 +40,15 @@ services:
     ports:
       - "9000:5000"
     image: mlapp
+```
+Next we need to add the requirements of the app. Since I have already implemented this I am aware of the requirements, but usually one adds the requirements along the way.
+<p style="font-size: medium; margin: 16px 0 4px 0; color: wheat;">requirements.txt</p>
+```
+Flask==2.3.2
+huggingface-hub==0.16.4
+requests==2.26.0
+transformers==4.31.0
+detoxify==0.5.0
 ```
 <p style="font-size: medium; margin: 16px 0 4px 0; color: wheat;">Dockerfile</p>
 ```dockerfile
@@ -107,11 +118,15 @@ def inference_engine():
 # Run the flask app
 ```  
 
-but the response times were too long.  
+but the response times were too long. So like any software development process I had to iterate again for improvement.
 
-I needed to get to the root of this issue and find the step taking the most time. Logging the time at each step is the way I did this.
+But first I needed to get to the root of this issue and find the step taking the most time. Logging each step is the way I did this.
 
-What I found was that most of the time was spent on classifying the texts, maybe a lighter model would be faster but there might be an accuracy tradeoff.
+What I found was that most of the time was spent on classifying the texts, understandable but I was sure it could be optimized.
+
+### Optimization
+
+One way of optimization may be a lighter model but there might be an accuracy tradeoff, also hunting for a model and changing the implementation (I couldn't find a replacement on hugging face at the time) is not a good use of the limited time.
 
 Another way to make the classification faster is to run them in parallel (If your machine supports and has the bandwidth for it).  
 Currently the flask server has to listen to the requests, compute the sentiment and abuse analysis, all on the same thread sequentially. There should be a significant speedup by using multiple threads/processes for classification.  
@@ -125,7 +140,7 @@ That is - multiple processes!!
 <p style="font-size: medium;">The next thread only runs when the current thread is IO/network blocked</p>
 
 In the python interpreter there is a Global Interpreter Lock (GIL) which ensures that only one thread runs in the interpreter at once. For a detailed explanation of GIL, read [this presentation](https://www.dabeaz.com/python/UnderstandingGIL.pdf?ref=blog.floydhub.com)
-So for CPU intensive applications multiple processes are needed...  
+So for CPU intensive applications multiple processes are the only choice...  
 
 So, lets say we made 2 processes, then we need to setup communication between them. There are 2 methods to achieve this, shared memory or message passing, 
 I chose to communicate through queues (message passing). Since I didn't know how to use locks in python and because Queues are easier to implement and manage.  
@@ -242,6 +257,6 @@ def inference_engine():
 
 
 ### Post notes
-* there are other lighter alternatives for sentiment analysis like MobileBert (90mb), it is easy to replace the model if needed. 
-* similarly Detoxify also has lightweight models like `original-small` etc, which can be changed as well
-* running both models at once might hit the RAM limits on hosted machines
+* There are other lighter alternatives for sentiment analysis like MobileBert (90mb), it is easy to replace the model if needed. 
+* Detoxify also has lightweight models like `original-small` etc, which can be changed as well
+* Running both models at once might hit the RAM limits on hosted machines

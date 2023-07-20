@@ -5,7 +5,7 @@ categories:
 tags: 
     - Rant
 header: 
-    image: /assets/images/a_few_moments_later2.jpg
+    image: /assets/images/a_few_moments_later.jpg
 # excerpt: S 
 sidebar:
     nav : job
