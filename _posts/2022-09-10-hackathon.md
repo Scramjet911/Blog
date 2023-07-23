@@ -1,7 +1,7 @@
 ---
 title: "The hackathon coding bonanza"
 categories: 
-    - AI/ML
+    - office_hackathon
 tags: 
     - sentiment analysis
     - abuse analysis
@@ -9,12 +9,13 @@ tags:
     - python
 header: 
 sidebar:
-    nav : office hackathon
+    nav : office_hackathon
+permalink: /office-hackathon
 classes: 
   - hackathon-body
 ---
 > R: Hey, our company is conducting a hackathon, you want to team up?  
-Me: **(lost in college hackathon memories)**  
+Me: **(having college hackathon defeat flashbacks)**  
 R: **(looks at me strangely)**  
 Me: Sure! Would love to participate in it, what product are we making?  
 R: I hoped you would have an idea...  
