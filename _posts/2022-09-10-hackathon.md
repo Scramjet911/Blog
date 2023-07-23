@@ -255,9 +255,17 @@ def inference_engine():
 
 ```
 
+### The End
+That's all folks!! I stopped working on the app as I almost fell out of my chair from sleep deprivation and sometime later we gave the presentation for this idea.
+Though we didn't win any prizes, I was amazed that I could implement all this in under a day (Without ChatGPT).  
+
+<blockquote style="margin-top: 10px">“In the end we retain from our studies only that which we practically apply.”  
+<p style="font-style: normal;">— Johann Wolfgang Von Goethe</p></blockquote>
+
 
 
 ### Post notes
 * There are other lighter alternatives for sentiment analysis like MobileBert (90mb), it is easy to replace the model if needed. 
 * Detoxify also has lightweight models like `original-small` etc, which can be changed as well
 * Running both models at once might hit the RAM limits on hosted machines
+* [Github Link](https://github.com/Scramjet911/review-comment-analysis)
