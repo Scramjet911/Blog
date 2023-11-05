@@ -17,6 +17,7 @@ title: Blog
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   This is the blog of Scramjet911.
+keywords: Software Developer, React, Android, Javascript, Python, Machine learning
 twitter_username: username
 github_username: Scramjet911
 minimal_mistakes_skin: dark
@@ -63,7 +64,7 @@ plugins:
 author:
   name   : "Scramjet"
   avatar : "/assets/images/ice_bear.jpg"
-  bio    : "A Guy who codes for fun.."
+  bio    : "A Guy who codes for fun.. (and work)"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -110,11 +111,11 @@ defaults:
       layout: single
       author_profile: true
 
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
+# category_archive:
+#   type: liquid
+#   path: /categories/
+# tag_archive:
+#   type: liquid
+#   path: /tags/
 
 github: [metadata]
