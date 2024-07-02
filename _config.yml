@@ -22,7 +22,7 @@ subtitle: # site tagline that appears below site title in masthead
 name: "Shashank"
 description: "Website of Shashank alias Scramjet911, with blogs and projects"
 url: https://scramjet911.github.io
-baseurl: /Blog
+baseurl: 
 repository: 
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
