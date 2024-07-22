@@ -21,7 +21,7 @@ title_separator: "-"
 subtitle: # site tagline that appears below site title in masthead
 name: "Shashank"
 description: "Website of Shashank alias Scramjet911, with blogs and projects"
-url: https://scramjet911.github.io
+url: https://blog.zephix.org
 baseurl: 
 repository: 
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
