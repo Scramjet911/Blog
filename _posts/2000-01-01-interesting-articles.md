@@ -6,6 +6,9 @@ tags:
     - websites
 ---
 
+### Great codebases
+[A Cloud ready banking system at scale (Fineract)](https://github.com/apache/fineract)
+
 ### Have read and recommend
 [A faster diffing algorithm](https://github.com/facebook/react/issues/10703) - It has a lot of insights into the actual bottlenecks in react rendering and the alternatives.  
 [Unraveling JPEG](https://parametric.press/issue-01/unraveling-the-jpeg/)  
